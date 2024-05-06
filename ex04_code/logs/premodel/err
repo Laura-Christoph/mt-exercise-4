@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/Users/laurachristoph/Library/CloudStorage/OneDrive-UniversitätZürichUZH/CL/05_F24_MachineTranslation/mt-2024-exercise-4/joeynmt/joeynmt/__main__.py", line 61, in <module>
+    main()
+  File "/Users/laurachristoph/Library/CloudStorage/OneDrive-UniversitätZürichUZH/CL/05_F24_MachineTranslation/mt-2024-exercise-4/joeynmt/joeynmt/__main__.py", line 41, in main
+    train(cfg_file=args.config_path, skip_test=args.skip_test)
+  File "/Users/laurachristoph/Library/CloudStorage/OneDrive-UniversitätZürichUZH/CL/05_F24_MachineTranslation/mt-2024-exercise-4/joeynmt/joeynmt/training.py", line 791, in train
+    cfg = load_config(Path(cfg_file))
+  File "/Users/laurachristoph/Library/CloudStorage/OneDrive-UniversitätZürichUZH/CL/05_F24_MachineTranslation/mt-2024-exercise-4/joeynmt/joeynmt/helpers.py", line 171, in load_config
+    with path.open("r", encoding="utf-8") as ymlfile:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1241, in open
+    return io.open(self, mode, buffering, encoding, errors, newline,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/pathlib.py", line 1109, in _opener
+    return self._accessor.open(self, flags, mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'scripts/../configs/premodel.yaml'
